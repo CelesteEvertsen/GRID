@@ -1,0 +1,18 @@
+footer {
+  text-align: center;
+  padding: 1em;
+  color: whitesmoke;
+  background-color: #333;
+  margin-top: 2em;
+  text-transform: capitalize;
+}
+.back-to-top{
+  color: white;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+footer{
+    max-width: 100%;
+  }
+
+}

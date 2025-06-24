@@ -1,0 +1,135 @@
+
+h2 {
+  text-shadow: #ffffff 20px 20px 30px;
+}
+.headline {
+  position: relative;
+  height: 95vh;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/asset/photo-1531297484001-80022131f5a1.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: 1;
+  transform: scale(1.05);
+}
+.headline-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  padding: 1em 0.5em;
+  color: white;
+  text-shadow: black 2px 2px 4px;
+  line-height: 1.6;
+}
+header {
+  padding: 1em;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header a {
+  color: whitesmoke;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.under-the-fold {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  width: 95%;
+}
+.blog {
+  grid-column: 1/-1;
+  margin-bottom: 1em;
+  /*  background-color: #f0f0f0;
+    border-radius: 8px; */
+  box-shadow: 0 2px 4px rgba(176, 20, 20, 0.1);
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+h3,
+p {
+  margin: 1em 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+  }
+img {
+  width: 100%;
+  height: auto;
+}
+.view-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-weight: 700;
+    text-shadow: none;
+  }
+
+  .headline-content {
+    width: 50%;
+    margin-left: 5em;
+    padding-bottom: 5em;
+    box-sizing: border-box;
+  }
+  .under-the-fold {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .blog p {
+    line-height: 1.5;
+  }
+  .blog {
+    grid-column: auto;
+    margin-bottom: 0;
+  }
+  .blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 0.3em;
+  }
+ 
+}
